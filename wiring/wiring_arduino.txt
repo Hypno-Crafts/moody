@@ -1,0 +1,8 @@
+// nRF24L01 -> Arduino wiring:
+// GND  -> GND
+// CE   -> D10
+// SCK  -> D13
+// MISO -> D12
+// VCC  -> 3.3V (DO NOT USE 5V !!!) 
+// CSN  -> D9
+// MOSI -> D11

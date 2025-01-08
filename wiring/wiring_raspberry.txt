@@ -1,0 +1,9 @@
+NRF24L01 Side   Raspberry Pi Side
+-------------   -----------------
+GND             GND     (PIN 20)
+CE              GPIO 22
+SCK             GPIO 11 (SPI_SCLK)
+MISO            GPIO  9 (SPI_MISO)
+VCC          	3.3V    (PIN 1)
+CSN            	GPIO  8 (SPI_CE0)
+MOSI            GPIO 10 (SPI_MOSI)

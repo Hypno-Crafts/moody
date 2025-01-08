@@ -1,0 +1,19 @@
+# This service file will autostart the ambilight software after starting up the raspberry pi. To activate follow these steps:
+
+# copy with " sudo cp ambilight.service /etc/systemd/system/ambilight.service "
+# activate with " sudo systemctl enable ambilight.service " 
+# start by " sudo systemctl start ambilight.service "
+# you can check the status of the service with " sudo systemctl status ambilight.service "
+
+[Unit]
+Description=Run Ambilight Script After Boot
+After=network.target
+
+[Service]
+ExecStart=/home/pi/.local/bin/poetry run python main.py
+WorkingDirectory=/home/pi/ambilight
+User=pi
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

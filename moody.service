@@ -1,0 +1,15 @@
+# This service file will autostart the moody software after starting up the raspberry pi.
+# Running setup.sh will copy this file to the correct location and also enable it.
+
+[Unit]
+Description=Run moody Script After Boot
+After=network.target
+
+[Service]
+ExecStart=/home/pi/moody/moodyvenv/bin/python /home/pi/moody/src/main.py
+WorkingDirectory=/home/pi/moody/
+User=pi
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

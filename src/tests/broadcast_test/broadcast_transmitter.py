@@ -2,6 +2,10 @@
 # This code will light up exactly 5 LEDs on the transmitter for a specified duration, changing their color every time.
 # It ends after 5 seconds.
 # (rotating between red, green and blue)
+import sys
+import os
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+sys.path.append(parent_dir)
 
 import argparse
 import time
@@ -9,6 +13,7 @@ from transmitter import Transmitter
 from colorfactory import ColorFactory
 import configparser
 import numpy as np
+
 
 config = configparser.ConfigParser()
 config.read("config.ini")

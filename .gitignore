@@ -9,5 +9,10 @@
 /*.PNG
 /*.JPG
 /*.JPEG
+/*.mp4
+/*.MP4
 
 */*.pyc
+*/*.zip
+
+*/*minecraft_kaggle/*

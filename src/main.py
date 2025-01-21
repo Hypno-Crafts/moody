@@ -52,7 +52,7 @@ if __name__ == "__main__":
         print("Processing HDMI data")
         vc = cv2.VideoCapture(0)
 
-    if not vc.isOpened():
+    if not vc.isOpened() and not commandlineargs.dark:
         print("Error: Could not open video stream.")
         # Blink 5 LEDs in blue color to indicate this error.
         for _ in range(0, 10):

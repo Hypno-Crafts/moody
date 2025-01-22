@@ -7,4 +7,4 @@
 1) Enable SPI via raspi-config
 2) Expand filesystem via raspi-config
 3) Reboot
-4) chmod +x setup.sh and run with ./setup.sh
+4) Execute: ```cd /home/pi && sudo apt install git -y && git clone https://github.com/Hypno-Crafts/moody.git && cd moody && chmod +x setup.sh && ./setup.sh```

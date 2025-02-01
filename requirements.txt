@@ -1,3 +1,4 @@
 opencv-python
 pyrf24
 tqdm
+onnxruntime

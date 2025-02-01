@@ -17,6 +17,7 @@ COLORS_IN_PAYLOAD = config.getint("parameters", "COLORS_IN_PAYLOAD")
 HORIZONTAL_LEDS = config.getint("parameters", "HORIZONTAL_LEDS")
 VERTICAL_LEDS = config.getint("parameters", "VERTICAL_LEDS")
 STANDBY_SECONDS = config.getint("parameters", "STANDBY_SECONDS")
+MODE = config.get("parameters", "MODE")
 
 if __name__ == "__main__":
     # Parse command-line arguments
@@ -29,7 +30,7 @@ if __name__ == "__main__":
     commandlineargs = parser.parse_args()
 
     # Initialize color factory
-    color_factory = ColorFactory(HORIZONTAL_LEDS, VERTICAL_LEDS)
+    color_factory = ColorFactory(HORIZONTAL_LEDS, VERTICAL_LEDS, MODE)
 
     if not commandlineargs.dark:
         print("Broadcasting data enabled")
@@ -51,6 +52,9 @@ if __name__ == "__main__":
         # Stream local HDMI video captured with HDMI to USB device
         print("Processing HDMI data")
         vc = cv2.VideoCapture(0)
+        if MODE == "AVERAGE":
+            vc.set(cv2.CAP_PROP_FRAME_WIDTH, 480) # leave on 480 for the YOLO models
+            vc.set(cv2.CAP_PROP_FRAME_HEIGHT, 480) # leave on 480 for the YOLO models
 
     if not vc.isOpened() and not commandlineargs.dark:
         print("Error: Could not open video stream.")

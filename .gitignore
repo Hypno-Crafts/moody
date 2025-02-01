@@ -3,16 +3,14 @@
 *devenv*
 
 # ignore images in root folder
-/*.png
-/*.jpg
-/*.jepg
-/*.PNG
-/*.JPG
-/*.JPEG
-/*.mp4
-/*.MP4
+**/**.png
+**/**.jpg
+**/**.jpeg
+**/**.PNG
+**/**.JPG
+**/**.JPEG
+**/**.mp4
+**/**.MP4
 
-*/*.pyc
-*/*.zip
-
-*/*minecraft_kaggle/*
+**/**.pyc
+**/**.zip

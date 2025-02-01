@@ -4,7 +4,7 @@
 sudo apt update && sudo apt upgrade -y
 
 # Install Python and virtual environment if not installed
-sudo apt install -y python3 python3-venv python3-pip libgl1
+sudo apt install -y python3 python3-venv python3-pip libgl1 python3-pyqt5
 
 # Create and activate a virtual environment
 python3 -m venv moodyvenv

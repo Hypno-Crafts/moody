@@ -28,5 +28,5 @@
       
 5) Once logged in via ssh, execute: 
       ```
-      cd /home/pi/moody && chmod +x setup.sh && ./setup.sh
+      cd /home/pi/moody && sudo chmod +x setup.sh && ./setup.sh
       ```

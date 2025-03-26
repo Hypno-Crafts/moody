@@ -30,3 +30,7 @@
       ```
       cd /home/pi/moody && sudo chmod +x setup.sh && ./setup.sh
       ```
+6) Perform a reboot:
+      ```
+      sudo reboot now
+      ```

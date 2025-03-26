@@ -1,5 +1,5 @@
 # Do not change any parameters in this test script if you are not sure what they do.
-# This code will light up exactly 5 LEDs on the transmitter for a specified duration, changing their color every time.
+# This code will light up exactly 5 LEDs on each lamp for a specified duration, changing their color every time.
 # It ends after 5 seconds.
 # (rotating between red, green and blue)
 import sys

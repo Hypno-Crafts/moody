@@ -13,7 +13,7 @@
       cd /home/pi && git clone https://github.com/Hypno-Crafts/moody.git
       ```
 3) Open raspi-config and enable SPI + expand the filesystem:
-    - Open a terminal and run:
+    - Open a terminal and run in order to open raspi-config:
       ```
       sudo raspi-config
       ```
